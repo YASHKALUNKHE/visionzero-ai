@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,64 +9,47 @@
 </head>
 <body>
   <header class="top-header">
-  <div class="brand">
-    <img src="https://img.icons8.com/ios-filled/50/vision.png" alt="VisionZero Logo" class="logo" />
-    <span class="title">VisionZero<span class="highlight">AI</span></span>
-  </div>
+    <div class="brand">
+      <img src="https://img.icons8.com/ios-filled/50/vision.png" alt="VisionZero Logo" class="logo" />
+      <span class="title">VisionZero<span class="highlight">AI</span></span>
+    </div>
 
-  <div class="tagline">
-    Smart Fault Detection Dashboard for Future Vehicles
-  </div>
+    <div class="tagline">
+      Smart Fault Detection Dashboard for Future Vehicles
+    </div>
 
-  <button id="themeToggle">🌓 Theme</button>
-</header>
-
-  <main class="dashboard">
-    <section class="card">
-      <div class="card-title">🎙️ Audio Fault Upload</div>
-    </section>
-    <section class="card">
-      <div class="card-title">🎞️ Image/Video Upload</div>
-    </section>
-    <section class="card">
-      <div class="card-title">📊 Fault History Log</div>
-    </section>
-    <section class="card">
-      <div class="card-title">🚨 AI Output Insights</div>
-    </section>
-    <script src="script.js"></script>
-</body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VisionZero-AI</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>🚗 VisionZero-AI</h1>
-    <p>Smart Fault Detection Dashboard for Future Vehicles</p>
-    <button id="themeToggle">🌙 Toggle Dark Mode</button>
-
+    <button id="themeToggle">🌓 Theme</button>
   </header>
 
   <main class="dashboard">
-    <section class="card">
-      <div class="card-title">🎙️ Audio Fault Upload</div>
-    </section>
-    <section class="card">
-      <div class="card-title">🎞️ Image/Video Upload</div>
-    </section>
-    <section class="card">
-      <div class="card-title">📊 Fault History Log</div>
-    </section>
-    <section class="card">
-      <div class="card-title">🚨 AI Output Insights</div>
-    </section>
-    <script src="script.js"></script>
+  <section class="card">
+    <div class="card-title">🎙️ Audio Fault Upload</div>
+    <form id="audioUploadForm">
+      <input type="file" id="audioFile" accept=".mp3, .wav" required />
+      <button type="submit">Upload Audio</button>
+    </form>
+  </section>
+
+  <section class="card">
+    <div class="card-title">🎞️ Image/Video Upload</div>
+    <form id="mediaUploadForm">
+      <input type="file" id="mediaFile" accept=".jpg, .png, .mp4, .mov" required />
+      <button type="submit">Upload Media</button>
+    </form>
+  </section>
+
+  <section class="card">
+    <div class="card-title">📊 Fault History Log</div>
+    <p>Coming Soon: Table of recent uploaded faults & analysis</p>
+  </section>
+
+  <section class="card">
+    <div class="card-title">🚨 AI Output Insights</div>
+    <p>Coming Soon: Output from trained AI models</p>
+  </section>
+</main>
+
+
+  <script src="script.js"></script>
 </body>
->>>>>>> 1f8443db1e820bcf318262bcc6b389acc2c753c9
 </html>
