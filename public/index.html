@@ -4,56 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VisionZero-AI</title>
+
+  <!-- ✅ Styles -->
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
+
 <body>
+  <!-- 🌐 Top Header -->
   <header class="top-header">
     <div class="brand">
       <img src="https://img.icons8.com/ios-filled/50/vision.png" alt="VisionZero Logo" class="logo" />
       <span class="title">VisionZero<span class="highlight">AI</span></span>
     </div>
-
-    <div class="tagline">
-      Smart Fault Detection Dashboard for Future Vehicles
-    </div>
-
+    <div class="tagline">Smart Fault Detection Dashboard for Future Vehicles</div>
     <button id="themeToggle">🌓 Theme</button>
   </header>
 
+  <!-- 📊 Main Dashboard -->
   <main class="dashboard">
-  <!-- Audio Upload -->
-  <section class="card">
-    <div class="card-title">🎙️ Audio Fault Upload</div>
-    <form id="audioForm">
-      <input type="file" id="audioInput" accept=".mp3,.wav" />
-      <button type="submit">Upload Audio</button>
-      <p id="audioStatus" class="status-msg"></p>
-    </form>
-  </section>
+    <!-- 🎙️ Audio Upload -->
+    <section class="card" data-aos="fade-up">
+      <div class="card-title">🎙️ Audio Fault Upload</div>
+      <form id="audioForm">
+        <input type="file" id="audioInput" accept=".mp3,.wav" />
+        <button type="submit">Upload Audio</button>
+        <p id="audioStatus" class="status-msg"></p>
+      </form>
+    </section>
 
-  <!-- Media Upload -->
-  <section class="card">
-    <div class="card-title">🎞️ Media Upload</div>
-    <form id="mediaForm">
-      <input type="file" id="mediaInput" accept=".jpg,.jpeg,.png,.mp4,.mov" />
-      <button type="submit">Upload Media</button>
-      <p id="mediaStatus" class="status-msg"></p>
-    </form>
-  </section>
+    <!-- 🎞️ Media Upload -->
+    <section class="card" data-aos="fade-up">
+      <div class="card-title">🎞️ Media Upload</div>
+      <form id="mediaForm">
+        <input type="file" id="mediaInput" accept=".jpg,.jpeg,.png,.mp4,.mov" />
+        <button type="submit">Upload Media</button>
+        <p id="mediaStatus" class="status-msg"></p>
+      </form>
+    </section>
 
-  <!-- Existing cards (optional, keep or remove) -->
-  <section class="card">
-    <div class="card-title">📊 Fault History Log</div>
-  </section>
-  <section class="card">
-    <div class="card-title">🚨 AI Output Insights</div>
-  </section>
-</main>
+    <!-- 📊 Fault History Log -->
+    <section class="card" data-aos="fade-up">
+      <div class="card-title">📊 Fault History Log</div>
+      <div id="faultHistory" style="max-height: 200px; overflow-y: auto; margin-top: 1rem; text-align: left;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+          <thead>
+            <tr style="border-bottom: 1px solid #ccc;">
+              <th style="text-align: left;">Type</th>
+              <th style="text-align: left;">Date</th>
+              <th style="text-align: left;">Result</th>
+            </tr>
+          </thead>
+          <tbody id="historyBody">
+            <!-- JS will append rows here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-</main>
+    <!-- 🚨 AI Output Insights -->
+    <section class="card" data-aos="fade-up">
+      <div class="card-title">🚨 AI Output Insights</div>
+      <p id="aiOutput" class="status-msg">No file uploaded yet.</p>
+    </section>
 
+    <!-- 🔊 Live Audio Visualizer -->
+    <section class="card audio-visualizer" data-aos="fade-up">
+      <div class="card-title">🔊 Live Audio Visualizer</div>
+      <input type="file" id="audioFile" accept="audio/*" />
+      <br /><br />
+      <audio id="audioPlayer" controls></audio>
+      <canvas id="audioCanvas" width="600" height="100"></canvas>
+    </section>
+  </main>
 
+  <!-- ✅ Scripts -->
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
 </body>
 </html>
