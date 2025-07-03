@@ -1,0 +1,72 @@
+[33mcommit e78a696cc317f16a2225e999039da5a873d04e98[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: YASHKALUNKHE <154042312+YASHKALUNKHE@users.noreply.github.com>
+Date:   Thu Jul 3 11:56:25 2025 +0530
+
+    feat: added input forms for audio and media upload
+
+[33mcommit 09019990abc1587fda4139d06b6cd8dc7c461e1f[m
+Merge: 57a3fe2 1f8443d
+Author: YASHKALUNKHE <154042312+YASHKALUNKHE@users.noreply.github.com>
+Date:   Thu Jul 3 11:18:28 2025 +0530
+
+    merge: synced local project with remote
+
+[33mcommit 57a3fe210a154ccd1da26e40de3199d1cec15f7c[m
+Author: YASHKALUNKHE <154042312+YASHKALUNKHE@users.noreply.github.com>
+Date:   Thu Jul 3 10:54:43 2025 +0530
+
+    fix: improve tagline contrast for light mode readability
+
+[33mcommit 1f8443db1e820bcf318262bcc6b389acc2c753c9[m
+Author: YASHKALUNKHE <154042312+YASHKALUNKHE@users.noreply.github.com>
+Date:   Thu Jul 3 10:24:32 2025 +0530
+
+    Add files via upload
+
+[33mcommit 883c8aa98ae0914f4d6a93546b0e96d418f0ce57[m
+Author: YASHKALUNKHE <154042312+YASHKALUNKHE@users.noreply.github.com>
+Date:   Thu Jul 3 10:18:49 2025 +0530
+
+    feat: add dark mode toggle to VisionZero dashboard
+
+[33mcommit 280976cc53ff8d29f2852ccbdbca433c308586ea[m
+Author: YASHKALUNKHE <154042312+YASHKALUNKHE@users.noreply.github.com>
+Date:   Wed Jul 2 17:17:59 2025 +0530
+
+    Add files via upload
+
+[33mcommit 488837029528a77030adede148b8a6948dc51e8a[m
+Author: YASHKALUNKHE <154042312+YASHKALUNKHE@users.noreply.github.com>
+Date:   Wed Jul 2 17:09:24 2025 +0530
+
+    📁 Keep empty folder tracked
+
+[33mcommit b19475c86ec40cf3f40e3c771c4fde739a359121[m
+Author: YASHKALUNKHE <154042312+YASHKALUNKHE@users.noreply.github.com>
+Date:   Wed Jul 2 16:44:14 2025 +0530
+
+    🎨 CSS revision: Styled calculator with layout and button effects
+
+[33mcommit de82ded50c8e14a829e31f4c1a67194dff988291[m
+Author: YASHKALUNKHE <154042312+YASHKALUNKHE@users.noreply.github.com>
+Date:   Wed Jul 2 16:38:05 2025 +0530
+
+    🚀 Added JavaScript mini calculator for DOM + event revision
+
+[33mcommit c1678c49ef2842bab454990c7d7292afe8628ce8[m
+Author: YASHKALUNKHE <154042312+YASHKALUNKHE@users.noreply.github.com>
+Date:   Wed Jul 2 16:29:49 2025 +0530
+
+    📝 Added initial project README
+
+[33mcommit 08ae27c459809947e3204bf490207f423f5a4d86[m
+Author: YASHKALUNKHE <154042312+YASHKALUNKHE@users.noreply.github.com>
+Date:   Wed Jul 2 16:12:23 2025 +0530
+
+    🔧 Initial project folder setup for VisionZero
+
+[33mcommit 9d098f3f7bfebd66257ef000e26fc3cd8b53092d[m
+Author: YASHKALUNKHE <154042312+YASHKALUNKHE@users.noreply.github.com>
+Date:   Wed Jul 2 15:29:37 2025 +0530
+
+    Initial commit

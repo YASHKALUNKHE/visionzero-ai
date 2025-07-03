@@ -191,3 +191,8 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
   background-color: #4338ca;
 }
+
+.status-msg {
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+}

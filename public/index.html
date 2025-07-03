@@ -22,31 +22,35 @@
   </header>
 
   <main class="dashboard">
+  <!-- Audio Upload -->
   <section class="card">
     <div class="card-title">🎙️ Audio Fault Upload</div>
-    <form id="audioUploadForm">
-      <input type="file" id="audioFile" accept=".mp3, .wav" required />
+    <form id="audioForm">
+      <input type="file" id="audioInput" accept=".mp3,.wav" />
       <button type="submit">Upload Audio</button>
+      <p id="audioStatus" class="status-msg"></p>
     </form>
   </section>
 
+  <!-- Media Upload -->
   <section class="card">
-    <div class="card-title">🎞️ Image/Video Upload</div>
-    <form id="mediaUploadForm">
-      <input type="file" id="mediaFile" accept=".jpg, .png, .mp4, .mov" required />
+    <div class="card-title">🎞️ Media Upload</div>
+    <form id="mediaForm">
+      <input type="file" id="mediaInput" accept=".jpg,.jpeg,.png,.mp4,.mov" />
       <button type="submit">Upload Media</button>
+      <p id="mediaStatus" class="status-msg"></p>
     </form>
   </section>
 
+  <!-- Existing cards (optional, keep or remove) -->
   <section class="card">
     <div class="card-title">📊 Fault History Log</div>
-    <p>Coming Soon: Table of recent uploaded faults & analysis</p>
   </section>
-
   <section class="card">
     <div class="card-title">🚨 AI Output Insights</div>
-    <p>Coming Soon: Output from trained AI models</p>
   </section>
+</main>
+
 </main>
 
 
