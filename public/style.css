@@ -8,32 +8,26 @@
   --shadow: rgba(0, 0, 0, 0.06);
 }
 
-body.dark-mode {
-  --bg: #0f172a;
-  --card-bg: #1e293b;
-  --accent: #4f46e5;
-  --header-bg: #020617;
-  --text-light: #94a3b8;
-  --text-dark: #f1f5f9;
-  --shadow: rgba(0, 0, 0, 0.25);
-}
-
-
-* {
+/* 🌤️ LIGHT MODE BODY */
+body {
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Roboto, sans-serif;
-  background-color: var(--bg);
+  background: linear-gradient(to right, #f8fafc, #e2e8f0); /* Light bluish-white gradient */
   color: var(--text-dark);
-  transition: background-color 0.3s, color 0.3s;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* 🌙 DARK MODE BODY */
+body.dark-mode {
+  --bg: #1e293b;
+  background: linear-gradient(to right, #0f172a, #1e293b); /* Deep dark-blue gradient */
+  color: var(--text-light);
 }
 
 
-header {
+
+/*header {
   background-color: var(--header-bg);
   color: white;
   text-align: center;
@@ -52,7 +46,7 @@ header p {
   color: var(--text-light);
   font-weight: 300;
   font-size: 1rem;
-}
+}*/
 
 .dashboard {
   display: grid;
@@ -64,15 +58,18 @@ header p {
 }
 
 .card {
-  background-color: var(--card-bg);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 1.8rem 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 35px var(--shadow);
   text-align: center;
   transition: all 0.3s ease-in-out;
-  border-top: 5px solid var(--accent);
-  position: relative;
+  color: var(--text-dark);
 }
+
 
 .card:hover {
   transform: translateY(-8px) scale(1.02);
@@ -120,3 +117,68 @@ header p {
 #themeToggle:hover {
   background: #4338ca;
 }
+/* 🌟 Header Styling */
+
+/* 🌟 HEADER STYLING: VisionZero-AI Brand Glass Header */
+
+.top-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.3); /* Light mode glass */
+}
+
+.dark-mode .top-header {
+  background: rgba(30, 41, 59, 0.35); /* Dark mode glass */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* 🧠 Branding Row */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) saturate(100%) invert(21%) sepia(85%) saturate(748%) hue-rotate(220deg);
+}
+
+/* 🔤 Title */
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.dark-mode .title {
+  color: #f1f5f9;
+}
+
+.title .highlight {
+  color: var(--accent);
+}
+
+/* 📝 Tagline */
+.tagline {
+  font-size: 1rem;
+  color: #475569; /* slate-600 — medium gray, great for light bg */
+  margin-bottom: 1rem;
+}
+
+.dark-mode .tagline {
+  color: #cbd5e1; /* soft light blue for dark mode */
+}
+
+
